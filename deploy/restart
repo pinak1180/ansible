@@ -1,0 +1,6 @@
+#!/bin/sh
+touch tmp/restart.txt
+echo "restarting nginx app"
+sh puma.sh restart
+sh delayed.sh
+service nginx restart

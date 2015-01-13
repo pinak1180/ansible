@@ -1,0 +1,19 @@
+## webapp
+
+webserver_name: 128.199.199.101
+deploy_directory: /home/sites/zenemp
+app_name: zenemp
+## stolen from https://github.com/jgrowl/ansible-playbook-ruby-from-src
+rubyTmpDir: /usr/local/src
+rubyUrl: http://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.0.tar.gz
+rubyCompressedFile: ruby-2.2.0.tar.gz
+rubyName: ruby-2.2.0
+tmpRubyPath: "{{rubyTmpDir}}/{{rubyName}}"
+elasticsearch_version: 1.4.0
+elasticsearch_cluster_name: elasticsearch
+elasticsearch_node_name: elasticsearch
+elasticsearch_network_host: 127.0.0.1
+elasticsearch_heap_size: 4g
+elasticsearch_min_mem: 256m
+elasticsearch_max_mem: 8g
+elasticsearch_java_opts: "-Xmx4096m -Xms512m"
